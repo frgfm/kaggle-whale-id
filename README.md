@@ -28,12 +28,14 @@ Download the dataset, and run the training script
 
 - Create a data folder within the root 
 - Join the Kaggle competition (accept the terms)
-- Download the dataset directly with browser download or set your [Kaagle API](https://github.com/Kaggle/kaggle-api) and run the following commands
+- Download the dataset directly with browser download or set your [Kaggle API](https://github.com/Kaggle/kaggle-api) and run the following commands
 
 ```bash
 cd data
 kaggle competitions download -c humpback-whale-identification
 ```
+
+- Unzip the train and test folders
 
 
 
