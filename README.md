@@ -10,7 +10,7 @@ Tested on the following version:
 import sys
 import torch, torchvision, numpy, pandas, matplotlib
 print(f"Python {'.'.join(map(str, sys.version_info[:3]))}")
-print(f'PyTorch {torch.__version__}, Torchvision {torchvision.__version__}, Numpy {numpy.__version__}, Pandas {pandas.__version__}, Matplotlib {matplotlib.__version__}')
+print(f"PyTorch {torch.__version__}, Torchvision {torchvision.__version__}, Numpy {numpy.__version__}, Pandas {pandas.__version__}, Matplotlib {matplotlib.__version__}")
 ```
 
 ```console
@@ -23,6 +23,19 @@ PyTorch 1.0.0, Torchvision 0.2.1, Numpy 1.15.4, Pandas 0.23.4, Matplotlib 2.2.3
 ## How to use it
 
 Download the dataset, and run the training script
+
+### Downloading the dataset
+
+- Create a data folder within the root 
+- Join the Kaggle competition (accept the terms)
+- Download the dataset directly with browser download or set your [Kaagle API](https://github.com/Kaggle/kaggle-api) and run the following commands
+
+```bash
+cd data
+kaggle competitions download -c humpback-whale-identification
+```
+
+
 
 ## TODO
 
