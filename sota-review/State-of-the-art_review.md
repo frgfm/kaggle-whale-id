@@ -37,5 +37,11 @@ Implementations that involve common Imagenet pretrained models
 - Implementation in github for whale identification: [link](https://github.com/rumaak/humpback_whale_fastai/blob/master/Image%20classifier.ipynb)
 
 ## Other
+<<<<<<< Updated upstream
 EDA and other transformations: ([link](https://spark-in.me/post/playing-with-dwt-and-ds-bowl-2018))
 Kaggle kernels collection [link](https://www.kaggle.com/shivamb/data-science-glossary-on-kaggle): covers algorithms, pytorch, DL, pretrained models
+=======
+EDA and other transformations: ([link](https://spark-in.me/post/playing-with-dwt-and-ds-bowl-2018)
+- Siamese Networks Part1: [link](https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e) : Siamese networks: special type of neural network architecure focused on differentiating between two inputs.
+- Siamese Networks Part2: [link](https://hackernoon.com/facial-similarity-with-siamese-networks-in-pytorch-9642aa9db2f7) 
+>>>>>>> Stashed changes
