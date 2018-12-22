@@ -39,3 +39,4 @@ Implementations that involve common Imagenet pretrained models
 ## Other
 - EDA and other transformations: ([link](https://spark-in.me/post/playing-with-dwt-and-ds-bowl-2018))
 - Kaggle kernels collection [link](https://www.kaggle.com/shivamb/data-science-glossary-on-kaggle): covers algorithms, pytorch, DL, pretrained models
+- Siamese networks [link](https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e) : Siamese networks are a special type of neural network architecture which focus on differentiating between two inputs, rather than classifying an input.
