@@ -37,5 +37,5 @@ Implementations that involve common Imagenet pretrained models
 - Implementation in github for whale identification: [link](https://github.com/rumaak/humpback_whale_fastai/blob/master/Image%20classifier.ipynb)
 
 ## Other
-EDA and other transformations: ([link](https://spark-in.me/post/playing-with-dwt-and-ds-bowl-2018))
-Kaggle kernels collection [link](https://www.kaggle.com/shivamb/data-science-glossary-on-kaggle): covers algorithms, pytorch, DL, pretrained models
+- EDA and other transformations: ([link](https://spark-in.me/post/playing-with-dwt-and-ds-bowl-2018))
+- Kaggle kernels collection [link](https://www.kaggle.com/shivamb/data-science-glossary-on-kaggle): covers algorithms, pytorch, DL, pretrained models
