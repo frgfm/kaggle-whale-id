@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 # class to create a custom dataset
 class Dataset:
     def __init__(self, csv_path, img_path, transform=None):
@@ -17,8 +14,15 @@ class Dataset:
         self.data = pd.read_csv(csv_path)
         # Create array of images
         self.images = self.data.iloc[:, 0]
-        # Creat array of labels
+        # Create array of labels
         self.labels = self.data.iloc[:, 1]
+        # Classes
+        self.classes = set(self.labels)
+        # Number of classes
+        self.num_classes = len(self.classes)
+        # label dictionaries
+        self.label2int = dict((label, number) for number, label in enumerate(self.classes))
+        self.int2label = dict(enumerate(self.label2int))
 
     def __len__(self):
         return len(self.data)
@@ -35,7 +39,7 @@ class Dataset:
             img = self.transforms(img)
         # Get labels
         label = self.labels[index]
-        sample = {'image': img, 'label': label}
+        sample = {'image': img, 'label': self.label2int[label]}
 
         
         return sample
