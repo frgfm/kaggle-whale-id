@@ -4,15 +4,17 @@
 '''
 Training tools for the image classification architecture
 '''
+
 import time
 import torch
 from torch import nn, optim
 from torch.optim import lr_scheduler
 from torch.autograd import Variable
 from torchvision import datasets, models, transforms
+import copy 
 
 
-def train_model(model, criteria, optimizer, scheduler, num_epochs=25, device='cuda'):
+def train_model(dataloader, model, criteria, optimizer, scheduler, num_epochs=25, device='cuda'):
     model.to(device)
     since = time.time()
 
@@ -35,7 +37,7 @@ def train_model(model, criteria, optimizer, scheduler, num_epochs=25, device='cu
             running_corrects = 0
 
             # Iterate over data.
-            for inputs, labels in dataloaders[phase]:
+            for inputs, labels in dataloader[phase]:
                 inputs = inputs.to(device)
                 labels = labels.to(device)
 
