@@ -34,7 +34,7 @@ class Dataset:
         if self.transforms:
             img = self.transforms(img)
         # Get labels
-        label = self.labels[idx]
+        label = self.labels[index]
         sample = {'image': img, 'label': label}
 
         
